@@ -1,0 +1,28 @@
+class One
+{
+    public void add()
+    {
+        int a=10;
+        int b=20;
+        System.out.println(a+b);
+    }
+}
+
+class Two extends One
+{
+    public void add()
+    {
+        int a=30;
+        int b=40;
+        System.out.println(a+b);
+    }
+}
+
+class TestOverload
+{
+    public static void main(String ar[])
+    {
+        One t=new Two();
+        t.add();
+    }
+}
